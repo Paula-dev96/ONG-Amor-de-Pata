@@ -16,14 +16,17 @@ O site foi desenvolvido para apresentar os principais projetos da ONG, incentiva
 🧱 Estrutura do Projeto
 
 O projeto contém 3 páginas principais, todas utilizando HTML5 semântico e estrutura de pastas organizada (HTML + imagens):
-Página
-Descrição
-index.html
+
+  • index.html
 Página inicial com informações sobre a ONG, missão e navegação.
-projetos.html
+
+  • projetos.html
 Mostra os projetos sociais e explica como participar ou ajudar.
-contato.html
+
+  •contato.html
 Formulário de contato para mensagens e dúvidas.
+
+⸻
 
 🧩 Recursos Utilizados
 	•	HTML5 Semântico

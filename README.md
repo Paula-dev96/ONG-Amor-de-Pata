@@ -2,7 +2,7 @@
 
 🐾 Amor de Pata
 
-Este projeto foi desenvolvido como parte da prática de Desenvolvimento Front-End, com o objetivo de aplicar os fundamentos de HTML5 na criação de uma plataforma web para uma ONG fictícia dedicada ao resgate e cuidado de animais.
+Este projeto foi desenvolvido como parte da prática de Desenvolvimento Front-End, com o objetivo de aplicar os fundamentos de HTML5, CSS3 e JavaScript na criação de uma plataforma web para uma ONG fictícia dedicada ao resgate e cuidado de animais.
 
 ⸻
 
@@ -30,6 +30,8 @@ Formulário de contato para mensagens e dúvidas.
 
 🧩 Recursos Utilizados
 	•	HTML5 Semântico
+	•   CSS3
+	•   JavaScript
 	•	Estrutura de pastas organizada (HTML e imagens)
 	•	Boas práticas de acessibilidade
 	•	Imagens otimizadas

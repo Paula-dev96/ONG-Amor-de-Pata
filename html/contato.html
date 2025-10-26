@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entre em contato com a ONG Amor de Pata e descubra como ajudar cães e gatos resgatados. Seja voluntário, faça uma doação ou tire suas dúvidas.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com a ONG Amor de Pata e descubra como ajudar cães e gatos resgatados.">
   <meta name="keywords" content="contato ONG, adoção de animais, voluntariado, doação, Amor de Pata, ajuda animais, resgate animal">
   <meta name="author" content="ONG Amor de Pata">
+  <link rel="stylesheet" href="css/style.css" />
   <title>Contato | ONG Amor de Pata</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Estilos simples para visualização */
+    .form-contato {
+      max-width: 700px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 0.5rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 0.6rem;
+      box-sizing: border-box;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    button {
+      background-color: #f2c6de;
+      color: #2a3a59;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #d8cfe2;
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <h1>ONG Amor de Pata</h1>
-    <h2>Cuidando de quem não tem voz 🐾</h2>
+    <h2>Adoção Responsável e Voluntariado 🐾</h2>
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -26,41 +81,111 @@
   <main>
     <section id="contato">
       <h2>Entre em Contato</h2>
-      <p>Quer adotar, ser voluntário ou tirar dúvidas sobre nossos projetos? Fale com a gente! 💬</p>
       <img src="imagens/img5.jpeg" alt="Adote-me">
+      <p>Quer adotar, ser voluntário ou tirar dúvidas sobre nossos projetos? Fale com a gente! 💬</p>
 
-      <form action="#" method="post" class="form-contato">
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      <form action="#" method="post" class="form-contato" id="contatoForm">
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
+          <legend>Dados Pessoais</legend>
 
-        <label for="assunto">Assunto:</label>
-        <select id="assunto" name="assunto" required>
-          <option value="">Selecione</option>
-          <option value="adocao">Adoção</option>
-          <option value="doacao">Doação</option>
-          <option value="voluntariado">Voluntariado</option>
-          <option value="duvidas">Dúvidas Gerais</option>
-        </select>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+
+          <div class="grid-2">
+            <div>
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00"
+                     pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                     title="Digite um CPF no formato 000.000.000-00"
+                     required>
+            </div>
+
+            <div>
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"
+                     pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                     title="Use o formato (00) 00000-0000"
+                     required>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label for="data_nasc">Data de Nascimento:</label>
+              <input type="date" id="data_nasc" name="data_nasc" required>
+            </div>
+
+            <div>
+              <label for="senha">Senha:</label>
+              <input type="password" id="senha" name="senha" placeholder="" minlength="6" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ENDEREÇO -->
+        <fieldset>
+          <legend>Endereço</legend>
+
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Rua Exemplo, 123, Apto 12" required>
+
+          <div class="grid-2">
+            <div>
+              <label for="cep">CEP:</label>
+              <input type="text" id="cep" name="cep" placeholder="00000-000"
+                     pattern="[0-9]{5}-[0-9]{3}"
+                     title="Use o formato 00000-000"
+                     required>
+            </div>
+
+            <div>
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" name="cidade" required>
+            </div>
+          </div>
+
+          <label for="estado">Estado:</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="BA">Bahia</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PE">Pernambuco</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="GO">Goiás</option>
+            <option value="DF">Distrito Federal</option>
+          </select>
+        </fieldset>
+
+        <!-- ASSUNTO E MENSAGEM -->
+        <fieldset>
+          <legend>Mensagem</legend>
+
+          <label for="assunto">Assunto:</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione</option>
+            <option value="adocao">Adoção</option>
+            <option value="doacao">Doação</option>
+            <option value="voluntariado">Voluntariado</option>
+            <option value="duvidas">Dúvidas Gerais</option>
+          </select>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        </fieldset>
 
         <button type="submit">Enviar Mensagem</button>
       </form>
-    </section>
 
-    <section id="informacoes">
-      <h2>Outras formas de contato 📞</h2>
-      <ul>
-        <li><strong>Email:</strong> contato@amordepata.org.br</li>
-        <li><strong>Telefone:</strong> (11) 99999-9999</li>
-        <li><strong>Endereço:</strong> Rua Esperança, 123 - São Paulo/SP</li>
-      </ul>
-
-      <h3>Redes sociais:</h3>
+       <h3>Redes sociais:</h3>
       <p>Siga e compartilhe nossa causa:</p>
       <ul class="redes">
         <li><a href="#">Instagram</a></li>
@@ -69,7 +194,7 @@
       </ul>
     </section>
   </main>
-
+<script src="script.js" defer></script>
   <footer>
     <p>&copy; 2025 ONG Amor de Pata. Todos os direitos reservados.</p>
   </footer>

@@ -1,0 +1,131 @@
+body{
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background-color: #f9f5ef;
+ color: #444;
+ line-height : 1.6;
+}
+
+h1, h2, h3{
+    color: #2a3a59;
+    text-align: center;
+}
+h1{
+    font-size:2.2em;
+    margin-top: 0.5em;
+}
+h2{
+    font-size: 1.8em;
+    margin-bottom:0.4em;
+}
+p, li{
+    font-size: 1em;
+}
+/*----Cabeçalho-----*/
+header{
+    background-color: #cfe0f5;
+    text-align:center;
+    padding: 1.5em 1em;
+    border-bottom: 4px solid #d8cfd4;
+}
+header img{
+    width:100%;
+    max-height :280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+/*Navegação*/
+nav u{
+    list-style: none;
+    padding: 0;
+    margin: 1 em 00;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+nav a{
+    text-decoration: none;
+    color: #2a3a59;
+    font-weight: 600;
+    background-color: #a7c7e7;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+nav a:hover{
+    background-color: #f2c6de;
+    color: #fff;
+}
+/*seções principais*/
+main{
+    padding: 2em 1.5em;
+}
+section{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5em;
+    margin: 2em auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+section:hover{
+    transform: translateY(-5px);
+}
+section img{
+    width:100%;
+    border-radius: 10px;
+    margin: 1 em 0;
+}
+ul{
+    padding-left: 1.2em;
+}
+strong{
+    color: #2a3a59;
+}
+/*botoes*/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #2a3a59;
+    background-color: #f2c6de;
+    padding: 0.7 em 1.5em;
+    border-radius:25px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 0.5em;
+
+}
+.btn:hover{
+    background-color: #fad4c0;
+    color: #2a3a59
+}
+/*Roddapé*/
+footer{
+    text-align: center;
+    background-color: #d8cfe2;
+    color: #2a3a59;
+    padding: 1em;
+    font-size: 0.9em;
+    border-top: 3px solid #a7c7e7;
+}
+/*responsividade*/
+@media (max-width: 600px){
+    h1{
+        font-size: 1.6em;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    section{
+        padding: 1em;
+    }
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+}

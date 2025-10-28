@@ -39,11 +39,8 @@ Formulário de contato para mensagens e dúvidas.
 
 ⸻
 
-🚀 Como Visualizar
-	1.	Baixe ou clone este repositório.
-	2.	Abra a pasta no Visual Studio Code.
-	3.	Clique com o botão direito em index.html → “Open with Live Server”
-(ou abra manualmente no navegador).
+🚀 Visualize através do link:
+	https://paula-dev96.github.io/ONG-Amor-de-Pata/
 
 ⸻
 
@@ -60,7 +57,5 @@ Este projeto é de uso acadêmico e não possui fins comerciais.
 
 ⸻
 
-🐶 Conheça a ONG
 
-Clique AQUI para saber mais sobre o Amor de Pata 💖
 
